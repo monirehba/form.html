@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="my data.php">
+      <fieldset style="background-color: rgb(255, 249, 249)">
+        <legend style="text-align: center">
+          <h2>personal information form</h2>
+        </legend>
+        <fieldset style="background-color: rgb(244, 250, 255)">
+          <legend><h4>individual profile</h4></legend>
+          <label for="fname">First name :</label>
+          <br />
+          <input type="txt" id="name" placeholder="enter your first name" />
+          <br />
+
+          <label for="lname">Last name :</label>
+          <br />
+          <input type="txt" id="name" placeholder="enter your last name" />
+          <br />
+
+          <label for="work">Major :</label>
+          <br />
+          <input type="txt" id="job" placeholder="enter your major" />
+          <br />
+          <br />
+          <label for="birthday">Date of birthday: </label>
+          <br />
+          <input type="date" id="birthday" placeholder="birthday" required />
+          <br />
+          <br />
+          <label for="jen">Gender:</label>
+          <input type="radio" name="marital" id="marital" />
+          <label for="marital">Men</label>
+          <input type="radio" name="marital" id="marital" />
+          <label for="marital">Woman</label>
+          <br />
+          <br />
+          <label for="jen "> Marital status: </label>
+          <select name="jen" id="jen">
+            <option value="Single"></option>
+            <option value="Single">single</option>
+            <option value="Married">married</option>
+            <option value="Divorsed">divorced</option>
+          </select>
+
+          <br />
+          <br />
+        </fieldset>
+
+        <fieldset style="background-color: rgb(244, 250, 255)">
+          <legend><h4>information</h4></legend>
+
+          <label for="phone">Phone Number: </label>
+          <br />
+          <input type="number" id="phone" placeholder="+98..." />
+          <br />
+
+          <label for="email">Email Address:</label>
+          <br />
+          <input type="txt" id="email" placeholder="example@yahoo.com." />
+          <br />
+          <br />
+          <label for="city">City :</label>
+          <br />
+          <select name="txt" id="City" aria-placeholder="Tehran">
+            <option value="city" disabled selected>City You Born</option>
+            <option value="Tehran">Tehran</option>
+            <option value="Isfahan">Iafahan</option>
+            <option value="Shiraz">Shiraz</option>
+            <option value="Ahvaz">Ahvaz</option>
+            <option value="Mashhad">Mashhad</option>
+          </select>
+          <br />
+          <br />
+          <label for="address"> Your Address:</label>
+          <br />
+          <textarea
+            name="address"
+            id="adress"
+            rows="5"
+            role="10"
+            placeholder="Enter Your Address"
+          ></textarea>
+          <br />
+          <label for="about you">Introduction:</label>
+          <br />
+          <input
+            type="txt"
+            id="about you"
+            placeholder="write about yourself"
+            style="width: 300px"
+          />
+        </fieldset>
+
+        <fieldset style="background-color: rgb(244, 250, 255)">
+          <legend><h4>Upload Documents</h4></legend>
+          <label for="certificate">Certificate:</label>
+
+          <input type="file" id="certificate" />
+
+          <label for="image"> Your Image:</label>
+          <input type="file" id="image" />
+        </fieldset>
+
+        <fieldset style="background-color: rgb(244, 250, 255)">
+          <legend><h4>Course Applicant</h4></legend>
+          <label for="courses">Choose Your Course:</label>
+          <br />
+          <select name="courses" id="courses" style="width: 180px">
+            <option value="choose" disabled selected>choose</option>
+            <optgroup label="Front End">
+              <option value="html">HTMl</option>
+              <option value="java">JAVA</option>
+              <option value="js">JS</option>
+              <option value="react">React</option>
+            </optgroup>
+            <optgroup label="Back End">
+              <option value="php">PHP</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <label for="language">what language do you know?</label>
+          <input
+            type="checkbox"
+            name="Language1"
+            id="Language1"
+            value="English"
+          />
+          <label form="Language1">English</label>
+          <input
+            type="checkbox"
+            name="Language2"
+            id="Language2"
+            value="French"
+          />
+          <label form="Language2">French</label>
+
+          <input
+            type="checkbox"
+            name="Language3"
+            id="Language3"
+            value="other"
+          />
+          <label form="Language3">Other</label>
+          <label for="Language4"></label>
+          <input type="txt" id="Language4" placeholder="Write Your Language" />
+        </fieldset>
+        <br />
+
+        <input type="submit" value="Submit" />
+        <button>Back</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
